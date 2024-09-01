@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 17%, rgba(0,34,75,1) 100%);
+}
+
+#maintext {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: trans    late(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    background: linear-gradient(to left, grey, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 4.75em;
+    text-shadow: 0px 0px 100px #2b2b2b;
+    animation: fade-in 1s ease-in-out;
+    filter: brightness(150%);
+}
+
+.smallText {
+    color: rgba(177, 177, 177, 0.75);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    animation: fade-in 1s ease-in-out;
+    text-shadow: 0px 0px 10px black;
+    filter: brightness(150%);
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+        filter: brightness(50%);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        filter: brightness(150%);
+    }
+}
+
+#buttons {
+    position: absolute;
+    left: 50%;
+    top: 118%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.button {
+    border-radius: .6em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.2);
+    padding: 0.3em 1.25em;
+    background: linear-gradient(to right, grey, rgba(255, 255, 255, 0.75));
+    border: none;
+    transition-duration: 0.4s;
+    animation: fade-in 1s ease-in-out;
+    transition-behavior: smooth;
+    filter: brightness(150%);
+}
+
+.button:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+#logo img {
+    width: 3%;
+    height: 3%;
+    margin-right: 1em;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
+    animation: fade-in 1s ease-in-out;
+}
+
+#logo h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: white;
+    text-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5);
+}
